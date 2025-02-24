@@ -17,18 +17,26 @@ page = st.sidebar.radio("Go to", [
 
 # Load pages dynamically
 if page == "🏠 Home":
-    from pages import 1_🏠_Home
+    from home import home_page
+    home_page()
 elif page == "👤 Profile":
-    from pages import 2_👤_Profile
+    from profile import profile_page
+    profile_page()
 elif page == "⚖️ Attorneys":
-    from pages import 3_⚖️_Attorneys
+    from attorneys import attorneys_page
+    attorneys_page()
 elif page == "🏥 Legal Aid":
-    from pages import 4_🏥_Legal_Aid
+    from legal_aid import legal_aid_page
+    legal_aid_page()
 elif page == "📅 Proceedings":
-    from pages import 5_📅_Proceedings
+    from proceedings import proceedings_page
+    proceedings_page()
 elif page == "📚 Resources":
-    from pages import 6_📚_Resources
+    from resources import resources_page
+    resources_page()
 elif page == "🔄 Rehabilitation":
-    from pages import 7_🔄_Rehabilitation
+    from rehabilitation import rehabilitation_page
+    rehabilitation_page()
 elif page == "🤖 AI Lawbot":
-    from pages import 8_🤖_AI_Lawbot
+    from lawbot import lawbot_page
+    lawbot_page()
